@@ -22,3 +22,10 @@ AutosRUs' new MechaCar is "suffering from production troubles" and the company i
   The intercept was also statistically significant, indicating that there are likely other factors, not included in our dataset, that have a strong impact on the MPG values.
 * Slope of the linear model: The slope of the linear model can not be considered to be zero as the p-value, 5.35x10<sup>-11</sup>, is lower than an extreme level of significance. Thus the null hypothesis must be rejected. This means that the relationship between our variables and the miles per gallon is subject to more than random chance.
 * Effectiveness of the linear model: Although there are still unconsidered factors, this model does predict the mpg values of MechaCar prototype with some relative effectiveness. The r-squared value of 0.7149 indicates that the model is 71% accurate.
+
+### Summary Statistics on Suspension Coils
+![Suspension Coils Total Summary](total_summary_screenshot.png)
+![Suspension Coils Lot Summary](lot_summary_screenshot.png)
+* The overall variance is under 100 PSI and meets the expected specifications. However, the variance for Lot 3 is well over the acceptable threshold, at 170.28.
+
+
