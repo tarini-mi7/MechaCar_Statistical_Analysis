@@ -28,4 +28,28 @@ AutosRUs' new MechaCar is "suffering from production troubles" and the company i
 ![Suspension Coils Lot Summary](lot_summary_screenshot.png)
 * The overall variance is under 100 PSI and meets the expected specifications. However, the variance for Lot 3 is well over the acceptable threshold, at 170.28.
 
+### T-Tests on Suspension Coils
 
+![Suspension Coils Cumulative T-test](t_test_1.png)
+* The overall T-test shows that the PSI attribute is not statistically different from the population mean, and the p-value is *not* low enough (0.0603) for us to reject the null hypothesis.
+
+![Suspension Coil Lot 1 T-test](t_test_2.png)
+* The `Lot1` specific T-test shows the PSI attribute is not statistically different from the population mean, and the p-value is *not* low enough (1) for us to reject the null hypothesis.
+
+![Suspension Coil Lot 2 T-test](t_test_3.png)
+* The `Lot2` specific T-test shows the PSI attribute is not statistically different from the population mean, and the p-value is *not* low enough (0.6072) for us to reject the null hypothesis.
+
+![Suspension Coil Lot 3 T-test](t_test_4.png)
+* The `Lot3` specific T-test shows the PSI attribute is slightly statistically different from the population mean, and the p-value is *just low enough* (0.0417) for us to reject the null hypothesis.
+
+## Study Design: MechaCar vs Competition
+Consumers consider multiple factors when evaluating a car to purchase. While we consider mpg as a factor, we can also compare a complimentary factor of how powerful the car is in terms of horsepower.
+### Metric to test
+To narrow down our test, we should evaluate MechaCar's horse power, in comparison to various competitors' vehicles.
+### Null and Alternate Hypothesis
+H<sub>0</sub>: MechaCar prototypes' average horse power is similar to competitor's vehicles in the same vehicle class
+H<sub>a</sub>: MechaCar prototypes' average horse power is statistically above or below that of competitor vehicles.
+### Statistical Test Used
+The best statistical test for this would be two-sample t-tests.
+### What data is needed
+We would need to gather data related to pick-up and carrying power from all MechaCar prototypes, as well as from all major competitor vehicles.
